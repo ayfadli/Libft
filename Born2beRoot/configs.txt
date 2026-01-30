@@ -1,0 +1,22 @@
+# Born2beRoot Configuration Files
+
+## LVM Configuration
+- Physical Volumes: /dev/sda
+- Volume Group: LVMGroup
+- Logical Volumes:
+  - root (10GB)
+  - swap (2GB)
+  - home (5GB)
+
+## SSH Configuration
+Port 4242
+PermitRootLogin no
+PasswordAuthentication yes
+
+## UFW Configuration
+Status: active
+Default: deny (incoming), allow (outgoing)
+Rules:
+  - 4242/tcp ALLOW
+  - 80/tcp ALLOW
+  - 443/tcp ALLOW

@@ -16,9 +16,6 @@ To compile the library, use the Makefile provided:
 
 ```bash
 # Compile all source files and create libft.a
-make
-
-# Compile with all flags
 make all
 ```
 
